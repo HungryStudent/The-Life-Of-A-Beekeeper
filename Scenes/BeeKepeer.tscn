@@ -1,0 +1,204 @@
+[gd_scene load_steps=60 format=2]
+
+[ext_resource path="res://Sprites/Player/Up/Green_Tshirt/1.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/BeeKepeerMove.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Player/Up/Green_Tshirt/2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/Up/Green_Tshirt/3.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/Down/Green_Tshirt/3.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/Down/Green_Tshirt/1.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/Down/Green_Tshirt/2.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Player/Down/Blue_Tshirt/2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Player/State/Blue_Tshirt/1.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/Down/Blue_Tshirt/3.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Player/State/Blue_Tshirt/2.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Player/Up/Blue_Tshirt/1.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Player/Right/Blue_Tshirt/3.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Player/Up/Blue_Tshirt/3.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Player/Right/Blue_Tshirt/2.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Player/Up/Blue_Tshirt/2.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Player/Right/Blue_Tshirt/1.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Player/Left/Blue_Tshirt/2.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Player/Left/Blue_Tshirt/3.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Player/Left/Blue_Tshirt/1.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Player/Right/With_magazin/3.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Player/Right/With_magazin/2.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Player/Down/With_magazin/2.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Player/Left/With_magazin/3.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Player/Down/With_magazin/1.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Player/Up/With_magazin/3.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Player/Up/With_magazin/2.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Player/Left/With_magazin/1.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Player/Down/With_magazin/3.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Player/Left/With_magazin/2.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Player/Up/With_magazin/1.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Player/Right/With_magazin/1.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Player/maska.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Player/Down/With_ramki/2.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Player/Down/With_ramki/3.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Player/Left/With_ramki/1.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Player/Up/With_ramki/2.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Player/Right/With_ramki/3.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Player/Right/With_ramki/1.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Player/Left/With_ramki/2.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Player/Up/With_ramki/3.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Player/Down/With_ramki/1.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Player/Left/With_ramki/3.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Player/Up/With_ramki/1.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Player/Right/With_ramki/2.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Player/Left/With_bucket/2.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Player/Left/With_bucket/3.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Player/Right/With_bucket/1.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Player/Right/With_bucket/3.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Player/Right/With_bucket/2.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Player/Left/With_bucket/1.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Player/Down/With_bucket/2.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Player/Down/With_bucket/3.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Player/Down/With_bucket/1.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Player/Up/With_bucket/2.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Player/Up/With_bucket/3.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Player/Up/With_bucket/1.png" type="Texture" id=57]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 57 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "with_bucket_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 54 ) ],
+"loop": true,
+"name": "with_bucket_state",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 30 ), ExtResource( 28 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "with_magazin_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "green_tshirt_state",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 54 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "with_bucket_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "blue_tshirt_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 50 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "with_bucket_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "green_tshirt_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ) ],
+"loop": true,
+"name": "with_ramki_state",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 46 ), ExtResource( 51 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "with_bucket_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 36 ), ExtResource( 40 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "with_ramki_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 37 ), ExtResource( 44 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "with_ramki_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "with_magazin_state",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 34 ), ExtResource( 42 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "with_ramki_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "blue_tshirt_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "blue_tshirt_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 45 ), ExtResource( 39 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "with_ramki_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "with_magazin_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "with_magazin_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "green_tshirt_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 22 ), ExtResource( 32 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "with_magazin_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "blue_tshirt_state",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 16 ), ExtResource( 12 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "blue_tshirt_up",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10.1243, 11.3261 )
+
+[node name="BeeKepeer" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+rotating = true
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.115284, 0.115284 )
+frames = SubResource( 1 )
+animation = "blue_tshirt_left"
+speed_scale = 1.92
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.31102, 6.46145 )
+scale = Vector2( 0.649362, 0.649362 )
+shape = SubResource( 2 )
+
+[node name="maska" type="Sprite" parent="."]
+position = Vector2( 2, 0 )
+scale = Vector2( 0.130631, 0.130631 )
+texture = ExtResource( 33 )

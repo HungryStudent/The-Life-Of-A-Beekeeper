@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Teriyaki_Boyz_-_Tokyo_Drift_Fast_Furious_48364314.mp3-0b0f0d7d85b81e05fa96c2fd8a92f80b.mp3str"
+
+[deps]
+
+source_file="res://Audio/Teriyaki_Boyz_-_Tokyo_Drift_Fast_Furious_48364314.mp3"
+dest_files=[ "res://.import/Teriyaki_Boyz_-_Tokyo_Drift_Fast_Furious_48364314.mp3-0b0f0d7d85b81e05fa96c2fd8a92f80b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

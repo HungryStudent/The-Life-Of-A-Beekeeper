@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/medogonka.mp3-93f4b3b860dd039cb57d2fcd37d0e9de.mp3str"
+
+[deps]
+
+source_file="res://Audio/medogonka.mp3"
+dest_files=[ "res://.import/medogonka.mp3-93f4b3b860dd039cb57d2fcd37d0e9de.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

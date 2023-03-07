@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sports-car-rev-engine_zygsjmv_ (mp3cut.net).mp3-1f2e5023a90372b2469ab2257ad42336.mp3str"
+
+[deps]
+
+source_file="res://Audio/sports-car-rev-engine_zygsjmv_ (mp3cut.net).mp3"
+dest_files=[ "res://.import/sports-car-rev-engine_zygsjmv_ (mp3cut.net).mp3-1f2e5023a90372b2469ab2257ad42336.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

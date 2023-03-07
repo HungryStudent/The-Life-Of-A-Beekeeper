@@ -1,0 +1,311 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://vcrosdmonorusbyd.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/UI/Menu/background.jpeg" type="Texture" id=2]
+[ext_resource path="res://Audio/RASA-Пчеловод-_mp3cut.net_.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Sprites/UI/Menu/moonwalk.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/UI/Menu/Settings.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/UI/Menu/Play.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/UI/Menu/Settings/music.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/Menu/Quit.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/Menu/logo.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/Menu/Settings/nota.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/continue.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/Menu/spravka.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 1 )
+
+[node name="main_menu" type="CanvasLayer"]
+
+[node name="fon" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 830.619, 889.949 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -285.5
+margin_top = -424.685
+margin_right = 285.5
+margin_bottom = 146.315
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Main" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -173.0
+margin_top = -128.385
+margin_right = 173.0
+margin_bottom = 284.615
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="Main"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = 89.6548
+margin_right = 184.0
+margin_bottom = 215.655
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="Button" parent="Main"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = -63.0
+margin_right = 184.0
+margin_bottom = 63.0
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="Main"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = -219.022
+margin_right = 184.0
+margin_bottom = -93.0222
+focus_mode = 0
+toggle_mode = true
+enabled_focus_mode = 0
+icon = ExtResource( 6 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Help" type="Button" parent="Main"]
+margin_left = 388.0
+margin_top = -3.0
+margin_right = 505.0
+margin_bottom = 102.0
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 12 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 0.501961, 0.266667, 0.266667, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -175.587
+margin_top = -154.528
+margin_right = 172.413
+margin_bottom = 262.472
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="CheckButton" parent="Settings"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -149.0
+margin_top = -130.51
+margin_bottom = -50.5096
+focus_mode = 0
+pressed = true
+enabled_focus_mode = 0
+icon = ExtResource( 7 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sounds" type="CheckButton" parent="Settings"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -131.01
+margin_right = 154.0
+margin_bottom = -50.0096
+focus_mode = 0
+pressed = true
+enabled_focus_mode = 0
+icon = ExtResource( 10 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="Settings"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -141.621
+margin_top = 93.8005
+margin_right = 226.379
+margin_bottom = 219.801
+rect_scale = Vector2( 0.760002, 0.760002 )
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check_moonwalk" type="CheckBox" parent="Settings"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -174.941
+margin_top = -23.9648
+margin_right = 174.059
+margin_bottom = 29.0352
+icon = ExtResource( 4 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Help" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.764706 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -330.0
+margin_top = -152.5
+margin_right = 330.0
+margin_bottom = 152.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_help" type="Label" parent="Help"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -317.5
+margin_top = -141.0
+margin_right = 317.5
+margin_bottom = 141.0
+custom_fonts/font = SubResource( 1 )
+text = "Ваша цель: заработать 1.000.000.
+Игра начинается на Вашем  участке.
+Для заработка Вам нужно:
+1. Собрать мёд с улья и отнести его в гараж;
+2. Распечатать рамки на срезном столике;
+3. Положить рамки в медогонку и запустить её;
+4. Взять вёдра с мёдом из гаража и отнести в машину;
+5. Приехать на рынок и рагрузиться;
+6. Начать продажу и получать деньги.
+На накопленные деньги можно покупать улучшения в городе, благодаря которым заработок может пойти быстрее.
+Если Вас не будет более 5-ти дней, то пасека разроится и всё придётся начинать сначала!
+Удачи! "
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back" type="Button" parent="Help"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -180.5
+margin_top = 157.76
+margin_right = 180.5
+margin_bottom = 267.76
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+
+[node name="over" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.607843 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -408.0
+margin_top = -80.5
+margin_right = 408.0
+margin_bottom = 80.5
+
+[node name="over_text" type="Label" parent="over"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -396.0
+margin_top = -12.0
+margin_right = 396.0
+margin_bottom = 12.0
+custom_fonts/font = SubResource( 2 )
+text = "Вас слишком долго не было, пасека разроилась"
+
+[node name="next" type="Button" parent="over"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -197.0
+margin_top = 104.846
+margin_right = 197.0
+margin_bottom = 212.846
+icon = ExtResource( 11 )
+flat = true
+expand_icon = true

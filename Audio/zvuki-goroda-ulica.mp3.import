@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zvuki-goroda-ulica.mp3-68c56635ef2b6af40217422db656f4e7.mp3str"
+
+[deps]
+
+source_file="res://Audio/zvuki-goroda-ulica.mp3"
+dest_files=[ "res://.import/zvuki-goroda-ulica.mp3-68c56635ef2b6af40217422db656f4e7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

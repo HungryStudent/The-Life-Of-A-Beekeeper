@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/neiz_esten-z_uki-rynka.mp3-470a16fea20532c476b3b43053d58527.mp3str"
+
+[deps]
+
+source_file="res://Audio/neiz_esten-z_uki-rynka.mp3"
+dest_files=[ "res://.import/neiz_esten-z_uki-rynka.mp3-470a16fea20532c476b3b43053d58527.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

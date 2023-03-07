@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/koshachiy-dom-zvuk-murlykaniya-koshki-ochen-rasslablyaet.mp3-aea8c6acaeac81139414efbdaa31147e.mp3str"
+
+[deps]
+
+source_file="res://Audio/koshachiy-dom-zvuk-murlykaniya-koshki-ochen-rasslablyaet.mp3"
+dest_files=[ "res://.import/koshachiy-dom-zvuk-murlykaniya-koshki-ochen-rasslablyaet.mp3-aea8c6acaeac81139414efbdaa31147e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

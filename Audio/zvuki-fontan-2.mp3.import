@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zvuki-fontan-2.mp3-f6f7376a7511e6cd6cbd994b0b3ab43d.mp3str"
+
+[deps]
+
+source_file="res://Audio/zvuki-fontan-2.mp3"
+dest_files=[ "res://.import/zvuki-fontan-2.mp3-f6f7376a7511e6cd6cbd994b0b3ab43d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

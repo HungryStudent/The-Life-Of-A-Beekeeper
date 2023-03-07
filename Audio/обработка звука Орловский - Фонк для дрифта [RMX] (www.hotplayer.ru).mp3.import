@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/обработка звука Орловский - Фонк для дрифта [RMX] (www.hotplayer.ru).mp3-77559fb789e3f6a733c2cb83401ba06c.mp3str"
+
+[deps]
+
+source_file="res://Audio/обработка звука Орловский - Фонк для дрифта [RMX] (www.hotplayer.ru).mp3"
+dest_files=[ "res://.import/обработка звука Орловский - Фонк для дрифта [RMX] (www.hotplayer.ru).mp3-77559fb789e3f6a733c2cb83401ba06c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

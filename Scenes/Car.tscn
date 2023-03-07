@@ -1,0 +1,203 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Sprites/Car/left.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Car.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Car/up.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Car/down.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Car/right.png" type="Texture" id=5]
+[ext_resource path="res://Audio/fonk.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Sprites/Car/in_auto.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Car/exit_auto.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Car/trunk.png" type="Texture" id=9]
+[ext_resource path="res://vcrosdmonorusbyd.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Sprites/Car/put.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Car/close.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Car/take_bucket.png" type="Texture" id=13]
+[ext_resource path="res://Audio/big-diesel-car-on-dirt_mj7h8heo (mp3cut.net).mp3" type="AudioStream" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 19 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 33, 20 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 11
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 10 )
+
+[node name="Car" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+pause_mode = 1
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "left"
+
+[node name="BeeKeeper_in_trigger" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BeeKeeper_in_trigger"]
+shape = SubResource( 3 )
+
+[node name="Open_trunk" type="Button" parent="."]
+visible = false
+margin_left = 0.330353
+margin_top = -5.49057
+margin_right = 46.3304
+margin_bottom = 14.5094
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 9 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="In" type="Button" parent="."]
+visible = false
+margin_left = 0.165176
+margin_top = -21.4328
+margin_right = 46.1652
+margin_bottom = -1.43279
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 7 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Out" type="Button" parent="."]
+visible = false
+margin_top = -21.0
+margin_right = 46.0
+margin_bottom = -1.0
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="auto_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -4.958
+
+[node name="Trunk" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 8.0
+margin_top = -24.0
+margin_right = 98.0
+margin_bottom = 16.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count_buckets" type="Label" parent="Trunk"]
+margin_left = -0.235977
+margin_right = 87.764
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 4 )
+text = "Вёдер: 1/10"
+
+[node name="Take" type="Button" parent="Trunk"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -42.8928
+margin_top = -9.77142
+margin_right = 3.10725
+margin_bottom = 11.2286
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 13 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="Button" parent="Trunk"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -23.2438
+margin_top = 8.33264
+margin_right = 31.7562
+margin_bottom = 28.3326
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 12 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Put" type="Button" parent="Trunk"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -0.208385
+margin_top = -8.96935
+margin_right = 57.7916
+margin_bottom = 11.0306
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 11 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="work" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+volume_db = -23.524
+
+[connection signal="body_entered" from="BeeKeeper_in_trigger" to="." method="_on_BeeKeeper_in_trigger_body_entered"]
+[connection signal="body_exited" from="BeeKeeper_in_trigger" to="." method="_on_BeeKeeper_in_trigger_body_exited"]
+[connection signal="pressed" from="Open_trunk" to="." method="_on_Open_trunk_pressed"]
+[connection signal="pressed" from="In" to="." method="_on_In_pressed"]
+[connection signal="pressed" from="Out" to="." method="_on_Out_pressed"]
+[connection signal="pressed" from="Trunk/Take" to="." method="_on_Take_pressed"]
+[connection signal="pressed" from="Trunk/Close" to="." method="_on_Close_pressed"]
+[connection signal="pressed" from="Trunk/Put" to="." method="_on_Put_pressed"]
